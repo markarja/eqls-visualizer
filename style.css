@@ -164,7 +164,11 @@ input.scrollable-header {
 }
 
 .about {
-	background-color: rgb(255,255,255); 
+	background-color: #ffffff;
 	height: 100%; 
 	padding: 10px;	
+}
+
+.white {
+	background-color: #ffffff; 
 }
