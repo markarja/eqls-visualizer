@@ -5,7 +5,7 @@ var charttitle = "";
 var question = "";
 var chart = {};
 var options = {};
-var userkey = "X";
+var userkey = "611feeba3f2cb5a8d76956e580969ebf";
 
 var app = angular.module('euquality', [
   'ngRoute',
