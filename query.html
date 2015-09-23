@@ -1,0 +1,31 @@
+<div ui-content-for="title">
+  CHARTS
+</div>
+<div class="scrollable" ng-controller="QueryController">
+  <div class="scrollable-content white">
+    <div class="section">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{query.name}}</h3>
+        </div>
+        <div class="panel-body">
+        	<select class="form-control" ng-change="changeCountry(countryIdAndName)" ng-model="countryIdAndName">
+        		<option ng-repeat="item in countries" class="small" value="{{item.id}}:{{item.name}}" ng-selected="{{item.id == country.id}}">
+        			{{ item.name }}
+      			</option>  
+        	</select>     
+        	<br /> 
+			<select class="form-control" ng-change="displayReport(selectedItemId)" ng-model="selectedItemId">
+				<option ng-repeat="item in variables" class="small" value="{{item.id}}" ng-selected="{{item.id == variableId}}">
+        			{{ item.name }}
+      		  	</option>
+			</select>
+			<div id="container">
+	        	<div id="chart">
+	        	</div>     
+			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	
