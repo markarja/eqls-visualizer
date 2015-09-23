@@ -225,6 +225,8 @@ function switchYear(year) {
 }
 
 app.controller('MainController', function($rootScope, $scope, $location) {	
+
+	
 	
   // User agent displayed in home page
   $scope.userAgent = navigator.userAgent;
@@ -282,7 +284,11 @@ app.controller('MainController', function($rootScope, $scope, $location) {
 					return 0;
 				}
 			});
-		}
+		},
+		error: function (xhr, ajaxOptions, thrownError) {
+			alert(xhr.status);
+	        alert(thrownError);
+	    }
   });
   
   $.ajax({
@@ -307,7 +313,11 @@ app.controller('MainController', function($rootScope, $scope, $location) {
 					return 0;
 				}
 			});
-		}
+		},
+		error: function (xhr, ajaxOptions, thrownError) {
+			alert(xhr.status);
+	        alert(thrownError);
+	    }
   });
   
 });
