@@ -162,3 +162,9 @@ input.scrollable-header {
 .small {
 	font-size: 12px;	
 }
+
+.about {
+	background-color: rgb(255,255,255); 
+	height: 100%; 
+	padding: 10px;	
+}
